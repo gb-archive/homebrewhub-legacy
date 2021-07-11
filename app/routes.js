@@ -222,7 +222,8 @@ module.exports = function(app, passport) {
             'open-source' : 'Open Source',
             'puzzle' : 'Puzzle',
             'platform' : 'Platform',
-            'action' : 'Action'
+            'action' : 'Action',
+            'gbajam21' : 'gbajam21'
     }
 
     function getTag(permalink) {
