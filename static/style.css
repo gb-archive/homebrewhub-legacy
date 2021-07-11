@@ -189,12 +189,10 @@ code {
 
 .carousel {
     width: 320px;
-    height: 288px;
 }
 
 .carousel img {
     width: 320px;
-    height: 288px;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
 }
