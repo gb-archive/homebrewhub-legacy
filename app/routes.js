@@ -216,6 +216,27 @@ module.exports = function(app, passport) {
             })
     });
 
+    app.get('/music', function(req, res) {
+        p = 1
+        
+        // decent validation
+        if (isInt(req.query.page)){
+            if (req.query.page != 0) p = req.query.page
+        } else {
+            p = 1
+        }
+
+        console.log("requested page", p)
+        Game.paginate({'data.typetag' : 'music'}, { page: p, limit: 9 }, function(err, games) {
+            console.log(games.docs)
+                res.render('index.ejs', {
+                    req: req,
+                    games: games.docs,
+                    pages : games.pages
+                })
+            })
+    });
+
     categoriesDict = new Object()
     categoriesDict = {
             'rpg' : 'RPG',
