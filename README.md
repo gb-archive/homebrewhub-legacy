@@ -1,3 +1,10 @@
+## DEPRECATION NOTICE
+
+This repository is unmaintained and the software deprecated. It's here just for archival and historical purposes. [Please check the new version here](https://github.com/gbdev/homebrewhub). The stack has been migrated to a Django app to provide a RESTFul API and the frontend is now in Vue.js.
+
+---
+
+
 # [Homebrew Hub](https://gbhh.avivace.com)
 
 *Homebrew Hub* is a community project aiming to collect, archive and save every "unofficial" game, homebrew, patch, hackrom for Game Boy (Color) produced by the community through years of passionate work.
